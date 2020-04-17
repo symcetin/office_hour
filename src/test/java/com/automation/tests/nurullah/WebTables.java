@@ -1,4 +1,4 @@
-package com.automation.tests.office_hour.nurullah;
+package com.automation.tests.nurullah;
 
 import com.automation.utilities.Driver;
 import org.openqa.selenium.By;
@@ -54,6 +54,6 @@ public class WebTables {
 
     @AfterMethod
     public void shutdown(){
-        Driver.closeDriver();
+        Driver.getDriver().quit();
     }
 }

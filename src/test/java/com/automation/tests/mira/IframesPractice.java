@@ -1,11 +1,9 @@
 package com.automation.tests.mira;
 
-import com.automation.utilities.BrowserUtils;
-import com.automation.utilities.DriverFactory;
+import com.automation.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -18,7 +16,7 @@ public class IframesPractice {
     WebDriver driver;
     @BeforeMethod
     public void beforeMethod(){
-        driver = DriverFactory.createDriver("chrome");
+        driver = Driver.getDriver();
         driver.manage().window().maximize();
     }
     @AfterMethod

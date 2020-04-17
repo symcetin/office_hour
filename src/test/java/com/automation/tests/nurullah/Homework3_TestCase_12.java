@@ -1,6 +1,7 @@
 package com.automation.tests.office_hour.nurullah;
 
-import com.automation.utilities.DriverFactory;
+
+import com.automation.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +15,7 @@ public class Homework3_TestCase_12 {
     private WebDriver driver;
     @BeforeMethod
     public void setUp(){
-        driver = DriverFactory.createDriver("chrome");
+        driver = Driver.getDriver();
         driver.get("https://practice-cybertekschool.herokuapp.com");
     }
     //

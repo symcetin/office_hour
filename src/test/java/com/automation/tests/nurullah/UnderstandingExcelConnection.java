@@ -1,4 +1,5 @@
-package com.automation.tests.office_hour.nurullah;
+package com.automation.tests.nurullah;
+
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -7,7 +8,6 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class UnderstandingExcelConnection {

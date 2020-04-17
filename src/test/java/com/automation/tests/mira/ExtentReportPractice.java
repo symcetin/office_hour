@@ -1,9 +1,9 @@
 package com.automation.tests.mira;
 
+import com.automation.utilities.ConfigurationReader;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.cybertek.base.TestBase;
-import com.cybertek.utilities.ConfigurationReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;

@@ -1,7 +1,7 @@
-package com.automation.tests.office_hour.nurullah;
+package com.automation.tests.nurullah;
 
 import com.automation.utilities.BrowserUtils;
-import com.automation.utilities.DriverFactory;
+import com.automation.utilities.Driver;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -40,7 +40,7 @@ public class Nurullah_JSExecutor {
     @Test(description = "Send text to search box on etsy")
     public void testcase1() {
         //Driver instance created
-        driver = DriverFactory.createDriver("chrome");
+        driver = Driver.getDriver();
         //Navigating to etsy homepage
         driver.get("https://www.etsy.com/");
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -49,7 +49,7 @@ public class Nurullah_JSExecutor {
 
     @Test(priority = 0, description = "send text to search box")
     public void test1() {
-        driver = DriverFactory.createDriver("chrome");
+        driver = Driver.getDriver();
         //navigating to etsy home page
         driver.get("https://www.etsy.com/");
 
@@ -65,7 +65,7 @@ public class Nurullah_JSExecutor {
 
     @Test(priority = 1, description = "get the page title")
     public void test2() {
-        driver = DriverFactory.createDriver("chrome");
+        driver = Driver.getDriver();
         driver.get("https://www.etsy.com/");
         BrowserUtils.wait(4);
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -75,7 +75,7 @@ public class Nurullah_JSExecutor {
 
     @Test(priority = 2, description = "get the page title (return a value)")
     public void testcase3() {
-        driver = DriverFactory.createDriver("chrome");
+        driver = Driver.getDriver();
         //Navigating to etsy homepage
         driver.get("https://www.etsy.com/");
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -86,7 +86,7 @@ public class Nurullah_JSExecutor {
 
     @Test(description = "return page URL")
     public void test4() {
-        driver = DriverFactory.createDriver("chrome");
+        driver = Driver.getDriver();
         //navigating to etsy home page
         driver.get("https://www.etsy.com/");
 
@@ -104,7 +104,7 @@ public class Nurullah_JSExecutor {
     @Test(description = "return element text")
     public void test5() {
 
-        WebDriver driver = DriverFactory.createDriver("chrome");
+        WebDriver driver = Driver.getDriver();
         //Navigating to etsy homepage
         driver.get("https://www.etsy.com/");
 
@@ -116,7 +116,7 @@ public class Nurullah_JSExecutor {
 
     @Test(description = "scroll an element into view")
     public void test6() {
-        WebDriver driver = DriverFactory.createDriver("chrome");
+        WebDriver driver = Driver.getDriver();
         //Navigating to etsy homepage
         driver.get("https://www.etsy.com/");
 

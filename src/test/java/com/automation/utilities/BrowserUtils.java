@@ -1,4 +1,4 @@
-package com.cybertek.utilities;
+package com.automation.utilities;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -55,5 +55,19 @@ public class BrowserUtils {
         // save the screenshot to the path given
         FileUtils.copyFile(source, finalDestination);
         return target;
+    }
+
+    /**
+     * @param elements represents collection of WebElements
+     * @return collection of strings
+     */
+    public static List<String> getTextFromWebElements(List<WebElement> elements) {
+        List<String> textValues = new ArrayList<>();
+        for (WebElement element : elements) {
+            if (!element.getText().isEmpty()) {
+                textValues.add(element.getText());
+            }
+        }
+        return textValues;
     }
 }

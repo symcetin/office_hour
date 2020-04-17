@@ -1,7 +1,6 @@
 package com.automation.tests.mira;
 
 import com.automation.utilities.BrowserUtils;
-import com.automation.utilities.DriverFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
